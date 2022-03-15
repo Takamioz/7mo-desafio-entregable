@@ -1,6 +1,10 @@
+@mixin animation ($animation) {
+    animation: $animation;
+}
+
 .card-img-top:hover{
-    animation:move 2s infinite ease-in-out;
- }
+    @include animation (move 2s infinite ease-in-out);
+}
 
 @keyframes move{
     0% {
